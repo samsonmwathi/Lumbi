@@ -5,24 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/signup_bg"
-    tools:context=".MainActivity">
+    tools:parent_context=".SignupActivity">
 
     <ImageView
-        android:id="@+id/company_logo"
+        android:id="@+id/companyLogo"
         android:layout_width="141dp"
         android:layout_height="90dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:contentDescription="company_logo"
+        android:contentDescription="@string/company_logo_description"
         android:src="@drawable/mother" />
 
     <TextView
-        android:id="@+id/sign_up"
+        android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sign up"
+        android:text="@string/sign_up_title"
         android:textStyle="bold"
         android:textSize="24sp"
-        android:layout_below="@+id/company_logo"
+        android:layout_below="@+id/companyLogo"
         android:textColor="@android:color/white"
         android:layout_centerHorizontal="true"
         />
@@ -31,14 +32,15 @@
         android:id="@+id/firstName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sign_up"
+        android:layout_below="@+id/signUp"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:hint="Firstname"
-        android:layout_centerHorizontal="true"
+        android:hint="@string/firstname_hint"
         android:inputType="textCapSentences"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white" />
+
     <EditText
         android:id="@+id/surName"
         android:layout_width="match_parent"
@@ -47,7 +49,7 @@
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="10dp"
-        android:hint="Surname"
+        android:hint="@string/surname_hint"
         android:textColorHint="@android:color/white"
         android:textColor="@android:color/white"
         android:inputType="textCapSentences"
@@ -59,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/surName"
-        android:hint="email address"
+        android:hint="@string/email_address_hint"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="10dp"
@@ -76,7 +78,7 @@
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="10dp"
-        android:hint="date of birth"
+        android:hint="@string/date_of_birth_hint"
         android:textColorHint="@android:color/white"
         android:textColor="@android:color/white"
         />
@@ -90,7 +92,7 @@
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="10dp"
-        android:hint="password"
+        android:hint="@string/password_hint"
         android:textColorHint="@android:color/white"
         android:textColor="@android:color/white"
         android:inputType="textPassword"
@@ -103,7 +105,7 @@
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="10dp"
-        android:hint="confirm password"
+        android:hint="@string/confirm_password_hint"
         android:textColorHint="@android:color/white"
         android:textColor="@android:color/white"
         android:inputType="textPassword"
@@ -112,16 +114,40 @@
         />
 
     <Button
+        android:id="@+id/signUpButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/confirmPassword"
-        android:text="signup"
+        android:text="@string/signup_button_text"
         android:textAllCaps="false"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:textColor="@android:color/white"
         android:layout_centerHorizontal="true"
         android:backgroundTint="#50A4B2"
         android:shadowRadius="@android:integer/config_longAnimTime"
         />
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/already_have_an_account_text" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF915A"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        android:text="@string/login_button_text"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:onClick="goToLogin"/>
 
 </RelativeLayout>
