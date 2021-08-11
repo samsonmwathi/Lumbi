@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+ <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg">
+    android:background="@drawable/login_bg"
+    tools:parent_context=".LoginActivity">
+
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -16,7 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.081"
-        android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/family" />
 
     <EditText
@@ -55,9 +57,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="212dp"
         android:text="Login"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
@@ -69,6 +73,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="332dp"
         android:text="@string/email"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -80,7 +86,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="40dp"
-        android:text="@string/passwordText"
+        android:text="Password"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/TextPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText" />
@@ -93,14 +100,14 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"
         android:text="OR"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginButton"
         android:layout_width="210dp"
         android:layout_height="49dp"
         android:layout_centerHorizontal="true"
@@ -116,7 +123,7 @@
         app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signUpButton"
         android:layout_width="210dp"
         android:layout_height="49dp"
         android:layout_centerHorizontal="true"

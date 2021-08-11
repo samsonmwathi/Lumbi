@@ -2,4 +2,15 @@
     <string name="app_name">Lumbi</string>
     <string name="email">Email</string>
     <string name="passwordText">Password</string>
+    <string name="signup_button_text">signup</string>
+    <string name="confirm_password_hint">confirm password</string>
+    <string name="password_hint">password</string>
+    <string name="date_of_birth_hint">date of birth</string>
+    <string name="email_address_hint">email address</string>
+    <string name="surname_hint">Surname</string>
+    <string name="firstname_hint">Firstname</string>
+    <string name="sign_up_title">sign up</string>
+    <string name="company_logo_description">company_logo</string>
+    <string name="login_button_text">login</string>
+    <string name="already_have_an_account_text">Already have an account?</string>
 </resources>
