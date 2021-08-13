@@ -2,7 +2,8 @@
     <string name="app_name">Lumbi</string>
     <string name="email">Email</string>
     <string name="passwordText">Password</string>
-<Updated upstream
+<<<<<<< Updated upstream
+    <string name="signup_button_text">signup</string>
     <string name="confirm_password_hint">confirm password</string>
     <string name="password_hint">password</string>
     <string name="date_of_birth_hint">date of birth</string>

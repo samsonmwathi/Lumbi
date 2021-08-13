@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">interfacepls</string>
-    <string name="search_string">search</string>
-    <string name="home_string">home</string>
-    <string name="settings_string">settings</string>
-    <string name="account_string">account</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-</resources>

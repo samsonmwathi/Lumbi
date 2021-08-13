@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navbar);
         getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new homeFragment()).commit();
         navigationView.setSelectedItemId(R.id.bottom_navbar);
