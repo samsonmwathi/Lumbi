@@ -13,4 +13,6 @@
     <string name="company_logo_description">company_logo</string>
     <string name="login_button_text">login</string>
     <string name="already_have_an_account_text">Already have an account?</string>
+    <string name="reset_chooser_title">open password reset email with</string>
+
 </resources>

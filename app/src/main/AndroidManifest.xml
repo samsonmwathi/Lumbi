@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lumbi"
         tools:ignore="AllowBackup">
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
