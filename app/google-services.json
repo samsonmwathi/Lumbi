@@ -1,55 +1,33 @@
 {
   "project_info": {
-<<<<<<< Updated upstream
     "project_number": "957306400179",
     "project_id": "lumbi-14c25",
     "storage_bucket": "lumbi-14c25.appspot.com"
-=======
-    "project_number": "563256593554",
-    "project_id": "lumbi-48831",
-    "storage_bucket": "lumbi-48831.appspot.com"
->>>>>>> Stashed changes
   },
   "client": [
     {
       "client_info": {
-<<<<<<< Updated upstream
         "mobilesdk_app_id": "1:957306400179:android:0f396ef154f9d15d8aafc6",
-=======
-        "mobilesdk_app_id": "1:563256593554:android:0096a7cba9ae212e746a4b",
->>>>>>> Stashed changes
         "android_client_info": {
           "package_name": "com.example.lumbi"
         }
       },
       "oauth_client": [
         {
-<<<<<<< Updated upstream
           "client_id": "957306400179-9kk0ireugn3sbhjmvddtnfiad72a54bu.apps.googleusercontent.com",
-=======
-          "client_id": "563256593554-c5pepe3qjiocvtjku084jea732a35dt4.apps.googleusercontent.com",
->>>>>>> Stashed changes
           "client_type": 3
         }
       ],
       "api_key": [
         {
-<<<<<<< Updated upstream
           "current_key": "AIzaSyCvN1KSJeNwOnY9xLTzl3C9iHiFVPmt2Ds"
-=======
-          "current_key": "AIzaSyDwRzh3wm9yY8Yr3PJFzi8ac9LjoU0pMzc"
->>>>>>> Stashed changes
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-<<<<<<< Updated upstream
               "client_id": "957306400179-9kk0ireugn3sbhjmvddtnfiad72a54bu.apps.googleusercontent.com",
-=======
-              "client_id": "563256593554-c5pepe3qjiocvtjku084jea732a35dt4.apps.googleusercontent.com",
->>>>>>> Stashed changes
               "client_type": 3
             }
           ]

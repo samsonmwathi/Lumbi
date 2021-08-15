@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/signup_bg"
     android:weightSum="10"
-    tools:context=".Lesson">
+    tools:context=".HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -77,9 +77,11 @@
                 android:backgroundTint="@color/cream"
                 app:cardCornerRadius="10dp">
 
+                <!--needs alphabet background-->
+
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:background="@drawable/S1X_generated"
+
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
@@ -106,12 +108,12 @@
 
                 android:backgroundTint="@color/teal"
                 app:cardCornerRadius="10dp">
+                <!--needs numbers background-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:background="@drawable/Numbers_tile2"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:weightSum="10">
@@ -133,13 +135,14 @@
                 android:backgroundTint="@color/cream"
                 app:cardCornerRadius="10dp">
 
+                <!--needs hygiene background-->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
 
                     android:gravity="center"
-                    android:background="@drawable/Disinfected"
                     android:orientation="vertical"
                     android:weightSum="10">
 
