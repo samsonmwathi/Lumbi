@@ -14,5 +14,6 @@
     <string name="login_button_text">login</string>
     <string name="already_have_an_account_text">Already have an account?</string>
     <string name="reset_chooser_title">open password reset email with</string>
+    <string name="forgotpassword">ForgotPassword?</string>
 
 </resources>

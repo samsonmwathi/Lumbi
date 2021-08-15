@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
 
     EditText emailAddress,password;
-    Button loginButton;
+    Button loginButton,signupButton,googleSignInButton;
     String emailPattern ="[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
 
@@ -33,6 +33,8 @@ public class LoginActivity extends AppCompatActivity {
         emailAddress=findViewById(R.id.emailAddress);
         password=findViewById(R.id.password);
         loginButton=findViewById(R.id.loginButton);
+        signupButton=findViewById(R.id.signUpButton);
+        googleSignInButton=findViewById(R.id.googleSignInButton);
         progressDialog = new ProgressDialog(this);
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
@@ -44,6 +46,24 @@ public class LoginActivity extends AppCompatActivity {
                 PerformAuth();
             }
         });
+        signupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this,SignupActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
+
+        googleSignInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent googleIntent = new Intent(LoginActivity.this,GoogleSignInActivity.class);
+                googleIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(googleIntent);
+            }
+        });
+
     }
 
     private void PerformAuth() {
@@ -88,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToSignUp() {
+    public void googleSignIn() {
         setContentView(R.layout.activity_signup);
     }
 }

@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class SignupActivity extends AppCompatActivity {
     EditText firstName,surName,emailAddress,birthday,password,confirmPassword;
-    Button signUpButton;
+    Button signUpButton, loginButton;
     String emailPattern ="[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
 
@@ -36,6 +36,7 @@ public class SignupActivity extends AppCompatActivity {
         password=findViewById(R.id.password);
         confirmPassword=findViewById(R.id.confirmPassword);
         signUpButton=findViewById(R.id.signUpButton);
+        loginButton=findViewById(R.id.loginButton);
         progressDialog = new ProgressDialog(this);
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
@@ -45,6 +46,13 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 PerformAuth();
+            }
+        });
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignupActivity.this,MainActivity.class);
+                startActivity(intent);
             }
         });
     }
