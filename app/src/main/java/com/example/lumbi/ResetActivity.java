@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -21,6 +22,7 @@ public class ResetActivity extends AppCompatActivity {
     Button resetButton;
     String emailPattern ="[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
+    TextView loginText;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
     @Override
@@ -30,6 +32,7 @@ public class ResetActivity extends AppCompatActivity {
 
         emailAddress =findViewById(R.id.emailAddress);
         resetButton=findViewById(R.id.resetButton);
+        loginText=findViewById(R.id.loginText);
         progressDialog = new ProgressDialog(this);
         mAuth= FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
@@ -43,12 +46,10 @@ public class ResetActivity extends AppCompatActivity {
         });
 
 
+
     }
 
-    public void backToLogin(View view) {
-        Intent intent = new Intent(ResetActivity.this, MainActivity.class);
-        startActivity(intent);
-    }
+
     private void resetPassword() {
         String email= emailAddress.getText().toString();
         if(!email.matches(emailPattern)){
@@ -83,5 +84,10 @@ public class ResetActivity extends AppCompatActivity {
 
             });
         };
+    }
+
+    public void backToLogin(View view) {
+            Intent intent = new Intent(ResetActivity.this, LoginActivity.class);
+            startActivity(intent);
     }
 }

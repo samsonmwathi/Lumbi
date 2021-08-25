@@ -16,6 +16,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class SignupActivity extends AppCompatActivity {
     EditText firstName,surName,emailAddress,birthday,password,confirmPassword;
@@ -25,6 +28,9 @@ public class SignupActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     FirebaseUser mUser;
+    FirebaseDatabase rootNode = FirebaseDatabase.getInstance();
+    DatabaseReference reference = rootNode.getReference("users");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +57,7 @@ public class SignupActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignupActivity.this,MainActivity.class);
+                Intent intent = new Intent(SignupActivity.this,LoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -92,12 +98,13 @@ public class SignupActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                    if(task.isSuccessful()){
+                       signData();
                        progressDialog.dismiss();
                        SendUserToNextActivity();
-                       Toast.makeText(SignupActivity.this,"Signup Successful",Toast.LENGTH_SHORT);
+                       Toast.makeText(SignupActivity.this,"Sign up Successful",Toast.LENGTH_SHORT).show();
                    }else{
                        progressDialog.dismiss();
-                       Toast.makeText(SignupActivity.this,""+task.getException(),Toast.LENGTH_SHORT);
+                       Toast.makeText(SignupActivity.this,""+task.getException(),Toast.LENGTH_SHORT).show();
 
                    }
                 }
@@ -106,9 +113,20 @@ public class SignupActivity extends AppCompatActivity {
 
         }
     }
+    public void signData(){
+        String fName=firstName.getText().toString();
+        String sName=surName.getText().toString();
+        String email=emailAddress.getText().toString();
+        String bDay =birthday.getText().toString();
+        String pass =password.getText().toString();
+        String cPass=confirmPassword.getText().toString();
+        SignupHelper helper = new SignupHelper(fName,sName,email,bDay,pass,cPass);
+        reference.child(fName).setValue(helper);
+    }
 
     public void goToLogin(){
-        setContentView(R.layout.activity_login);
+        Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
     private void SendUserToNextActivity() {
         Intent intent = new Intent(SignupActivity.this, HomeActivity.class);
