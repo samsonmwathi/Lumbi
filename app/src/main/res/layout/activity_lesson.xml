@@ -19,8 +19,8 @@
             android:layout_centerVertical="true"
             android:padding="15dp"
             android:src="@drawable/ic_account">
-
         </ImageView>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:padding="10dp"
             android:text="Lumbi"
             android:textColor="@color/cream"
-            android:textSize="36sp"
+            android:textSize="30sp"
             android:textStyle="bold">
 
         </TextView>
@@ -54,7 +54,6 @@
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:layout_weight="6"
-
         android:background="@color/material_on_background_disabled"
         android:orientation="vertical">
 
@@ -73,31 +72,18 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
-
-                android:backgroundTint="@color/cream"
-                app:cardCornerRadius="10dp">
-
+                android:src="@drawable/letters_colorful"
+                android:backgroundTint="@color/cream">
+<!--                app:cardCornerRadius="10dp">-->
                 <!--needs alphabet background-->
-
                 <LinearLayout
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
+                    android:layout_width="272dp"
+                    android:layout_height="145dp"
                     android:layout_gravity="center"
-
+                    android:background="@drawable/letters"
                     android:orientation="vertical"
                     android:weightSum="10">
-
-
-
-
-
-
-
-
                 </LinearLayout>
-
-
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -106,25 +92,23 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
 
-                android:backgroundTint="@color/teal"
+                android:backgroundTint="@color/cream"
                 app:cardCornerRadius="10dp">
                 <!--needs numbers background-->
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="272dp"
+                    android:layout_height="145dp"
                     android:layout_gravity="center"
                     android:gravity="center"
+                    android:background="@drawable/numbers"
                     android:orientation="vertical"
-                    android:weightSum="10">
-
+                    android:weightSum="10"
+                    >
 
                 </LinearLayout>
-
-
-
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="50dp"
@@ -138,18 +122,15 @@
                 <!--needs hygiene background-->
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="272dp"
+                    android:layout_height="145dp"
                     android:layout_gravity="center"
-
+                    android:background="@drawable/hygiene"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:weightSum="10">
 
                 </LinearLayout>
-
-
-
             </androidx.cardview.widget.CardView>
 
 
