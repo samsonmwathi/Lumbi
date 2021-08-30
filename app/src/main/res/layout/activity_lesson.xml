@@ -74,7 +74,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
 
-                android:backgroundTint="@color/cream"
+                android:backgroundTint="@color/white"
                 app:cardCornerRadius="10dp">
 
                 <!--needs alphabet background-->
@@ -106,7 +106,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
 
-                android:backgroundTint="@color/teal"
+                android:backgroundTint="#fece2f"
                 app:cardCornerRadius="10dp">
                 <!--needs numbers background-->
 
@@ -132,7 +132,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
                 android:background="@color/cream"
-                android:backgroundTint="@color/cream"
+                android:backgroundTint="@color/white"
                 app:cardCornerRadius="10dp">
 
                 <!--needs hygiene background-->

@@ -11,20 +11,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lumbi"
         tools:ignore="AllowBackup">
-
+        <activity
+            android:name=".numbers"
+            android:exported="true" />
+        <activity
+            android:name=".Alphabets"
+            android:exported="true" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".GoogleSignInActivity" />
-        <activity android:name=".ResetActivity"/>
-        <activity android:name=".ProfileActivity"/>
-
+        <activity android:name=".ResetActivity" />
+        <activity android:name=".ProfileActivity" />
     </application>
 
 </manifest>
