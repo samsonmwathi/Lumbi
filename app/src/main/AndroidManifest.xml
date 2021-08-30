@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.lumbi">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +19,9 @@
         <activity
             android:name=".Alphabets"
             android:exported="true" />
+        <activity android:name=".GetStartedActivity"></activity>
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".ChildMenu" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".MainActivity">
