@@ -20,13 +20,12 @@
         android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_up_title"
-        android:textStyle="bold"
-        android:textSize="24sp"
         android:layout_below="@+id/companyLogo"
-        android:textColor="@android:color/white"
         android:layout_centerHorizontal="true"
-        />
+        android:text="@string/sign_up_title"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/firstName"
@@ -39,23 +38,22 @@
         android:hint="@string/firstname_hint"
         android:inputType="textCapSentences"
         android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white" />
+        android:textColorHint="@android:color/black" />
 
     <EditText
         android:id="@+id/surName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/firstName"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginTop="10dp"
-        android:hint="@string/surname_hint"
-        android:textColorHint="@android:color/white"
-        android:textColor="@android:color/white"
-        android:inputType="textCapSentences"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
+        android:hint="@string/surname_hint"
+        android:inputType="textCapSentences"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/black" />
     <EditText
         android:id="@+id/emailAddress"
         android:layout_width="match_parent"
@@ -65,23 +63,23 @@
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="10dp"
-        android:textColorHint="@android:color/white"
+        android:textColorHint="@android:color/black"
         android:textColor="@android:color/white"
         android:inputType="textEmailAddress"
 
         />
+
     <EditText
         android:id="@+id/birthday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/emailAddress"
         android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
         android:hint="@string/date_of_birth_hint"
-        android:textColorHint="@android:color/white"
         android:textColor="@android:color/white"
-        />
+        android:textColorHint="@android:color/black" />
 
 
     <EditText
@@ -90,28 +88,27 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/birthday"
         android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
         android:hint="@string/password_hint"
-        android:textColorHint="@android:color/white"
-        android:textColor="@android:color/white"
         android:inputType="textPassword"
-        />
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/black" />
+
     <EditText
         android:id="@+id/confirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/password"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginTop="10dp"
-        android:hint="@string/confirm_password_hint"
-        android:textColorHint="@android:color/white"
-        android:textColor="@android:color/white"
-        android:inputType="textPassword"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        />
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
+        android:hint="@string/confirm_password_hint"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/black" />
 
     <Button
         android:id="@+id/signUpButton"
