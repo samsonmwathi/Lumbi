@@ -10,4 +10,5 @@
     <color name="cream">#FFE9DB</color>
     <color name="teal">#50A4B2</color>
     <color name="orange">#FF915A</color>
+    <color name="TransparentWhite">#cccc</color>
 </resources>
