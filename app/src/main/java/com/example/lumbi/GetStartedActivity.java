@@ -20,11 +20,12 @@ public class GetStartedActivity extends AppCompatActivity {
     private int mCurrentPage;
 
     private TextView[] mDots;
-
+    Intent intent =getIntent();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
+
 
         mSlidePager = (ViewPager) findViewById(R.id.slideViewPager);
         mDotsLayout = (LinearLayout) findViewById(R.id.dotsLayout);
@@ -95,9 +96,7 @@ public class GetStartedActivity extends AppCompatActivity {
                 mNextButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent (GetStartedActivity.this, ChildMenu.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(intent);
+                        setContentView(R.layout.activity_lesson);
                     }
                 });
             }else{

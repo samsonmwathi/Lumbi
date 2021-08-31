@@ -11,7 +11,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class HomeActivity extends AppCompatActivity {
-DatabaseReference db = FirebaseDatabase.getInstance().getReference("user");
+    DatabaseReference db = FirebaseDatabase.getInstance().getReference("user");
+    Intent intent = getIntent();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +28,7 @@ DatabaseReference db = FirebaseDatabase.getInstance().getReference("user");
     }
 
     public void getProfile(View view) {
-        Intent intent = new Intent(HomeActivity.this,ProfileActivity.class);
+        intent = new Intent(HomeActivity.this,ProfileActivity.class);
         startActivity(intent);
     }
 

@@ -103,7 +103,12 @@ public class SignupActivity extends AppCompatActivity {
                    if(task.isSuccessful()){
                        signData();
                        progressDialog.dismiss();
-                       SendUserToNextActivity();
+                       Intent intent = new Intent(SignupActivity.this, GetStartedActivity.class);
+                       intent.putExtra("fName",fName);
+                       intent.putExtra("sName",sName);
+                       intent.putExtra("email",email);
+                       startActivity(intent);
+                       intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                        Toast.makeText(SignupActivity.this,"Sign up Successful",Toast.LENGTH_SHORT).show();
                    }else{
                        progressDialog.dismiss();
@@ -132,9 +137,7 @@ public class SignupActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private void SendUserToNextActivity() {
-        Intent intent = new Intent(SignupActivity.this, GetStartedActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
+
     }
 
 }

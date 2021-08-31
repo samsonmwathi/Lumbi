@@ -49,7 +49,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
                 android:backgroundTint="#FFE9DB"
-                android:onClick="toLesson"
+                android:onClick="addChild"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -65,8 +65,8 @@
                         android:layout_height="70dp"
                         android:layout_gravity="center"
                         android:layout_weight="8"
-                        android:onClick="toLesson"
-                        android:src="@drawable/panda_av"/>
+                        android:onClick="addChild"
+                        android:src="@drawable/ic_baseline_add_circle"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -97,8 +97,14 @@
                         android:layout_gravity="center"
                         android:layout_weight="8"
                         android:src="@drawable/panda_av">
-
                     </ImageView>
+                    <TextView
+                        android:id="@+id/profile_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="billy"
+                        android:textSize="20sp"
+                        />
 
                 </LinearLayout>
 

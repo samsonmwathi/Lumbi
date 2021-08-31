@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lumbi"
         tools:ignore="AllowBackup">
-        <activity android:name=".HygieneActivity"></activity>
+        <activity android:name=".AddChild"></activity>
+        <activity android:name=".HygieneActivity" />
         <activity
             android:name=".Numbers"
             android:exported="true" />
