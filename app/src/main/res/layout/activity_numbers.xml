@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ProfileActivity"
+    tools:context=".Numbers"
     android:background="@drawable/signup_bg">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -68,6 +68,7 @@
             app:cardUseCompatPadding="true">
 
             <ImageView
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/one"/>
@@ -75,6 +76,7 @@
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/two"
+
             android:layout_width="120dp"
             android:layout_height="120dp"
             app:cardPreventCornerOverlap="true"
