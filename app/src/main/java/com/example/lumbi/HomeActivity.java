@@ -37,7 +37,7 @@ DatabaseReference db = FirebaseDatabase.getInstance().getReference("user");
     }
 
     public void toLetters(View view) {
-        Intent intent = new Intent(HomeActivity.this,LettersActivity.class);
+        Intent intent = new Intent(HomeActivity.this,Alphabets.class);
         startActivity(intent);
     }
 
@@ -47,7 +47,7 @@ DatabaseReference db = FirebaseDatabase.getInstance().getReference("user");
     }
 
     public void toHygiene(View view) {
-        Intent intent = new Intent(HomeActivity.this,ProfileActivity.class);
+        Intent intent = new Intent(HomeActivity.this,HygieneActivity.class);
         startActivity(intent);
     }
 }

@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -93,7 +94,7 @@ public class Alphabets extends AppCompatActivity implements View.OnClickListener
                 builder.setTitle("A");
                 factory=LayoutInflater.from(Alphabets.this);
                 view=factory.inflate(R.layout.display, null);
-                image= (ImageView) view.findViewById(R.id.a);
+                image= (ImageButton) view.findViewById(R.id.a);
                 image.setImageResource(R.drawable.letter_a);
                 builder.setView(view);
                 builder.setNeutralButton("BACK",null);

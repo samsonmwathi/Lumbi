@@ -23,15 +23,6 @@
             android:src="@drawable/ic_account">
         </ImageView>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_settings"
-            android:padding="15dp"
-            android:onClick="getProfile"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true">
-        </ImageView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,7 +30,7 @@
             android:layout_centerInParent="true"
             android:padding="10dp"
             android:text="Lumbi"
-            android:textColor="@color/cream"
+            android:textColor="@color/black"
             android:textSize="36sp"
             android:textStyle="bold">
         </TextView>
