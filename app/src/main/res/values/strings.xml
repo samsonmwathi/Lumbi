@@ -15,5 +15,16 @@
     <string name="already_have_an_account_text">Already have an account?</string>
     <string name="reset_chooser_title">open password reset email with</string>
     <string name="forgotpassword">ForgotPassword?</string>
+    <string name="fullname_label">Edmond Walker</string>
+    <string name="email_label_string">edwalker@gmail.com</string>
+    <string name="edmond_walker">edmond walker</string>
+    <string name="edwalker_gmail_com">edwalker@gmail.com</string>
+    <string name="username">username</string>
+    <string name="update_account">update account</string>
+    <string name="cancel">Cancel</string>
+    <string name="day">Day</string>
+    <string name="_1">1</string>
+    <string name="learner">Learner</string>
+
 
 </resources>

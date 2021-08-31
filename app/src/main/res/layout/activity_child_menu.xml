@@ -20,12 +20,9 @@
             android:text="Lumbi"
             android:textColor="#FFE9DB"
             android:textSize="40sp"
-            android:textStyle="bold"
-            >
+            android:textStyle="bold">
 
         </TextView>
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -52,6 +49,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
                 android:backgroundTint="#FFE9DB"
+                android:onClick="toLesson"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -62,19 +60,14 @@
                     android:gravity="center"
                     android:orientation="vertical"
                     android:weightSum="10">
-
-
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_gravity="center"
                         android:layout_weight="8"
-
-                        android:src="@drawable/panda_av"></ImageView>
-
-
+                        android:onClick="toLesson"
+                        android:src="@drawable/panda_av"/>
                 </LinearLayout>
-
 
             </androidx.cardview.widget.CardView>
 
@@ -84,40 +77,34 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
-
+                android:onClick="toLesson"
                 app:cardCornerRadius="10dp"
                 android:backgroundTint="#FF915A">
 
                 <LinearLayout
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="16dp"
                     android:gravity="center"
+                    android:onClick="toLesson"
                     android:orientation="vertical"
                     android:weightSum="10">
-
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_gravity="center"
                         android:layout_weight="8"
-
                         android:src="@drawable/panda_av">
 
                     </ImageView>
 
-
                 </LinearLayout>
-
 
             </androidx.cardview.widget.CardView>
 
-
         </GridLayout>
-
 
     </LinearLayout>
 

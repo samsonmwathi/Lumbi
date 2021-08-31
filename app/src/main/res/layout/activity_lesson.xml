@@ -10,6 +10,7 @@
     tools:context=".HomeActivity">
 
     <RelativeLayout
+        android:id="@+id/topPanel"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize">
 
@@ -18,18 +19,18 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:padding="15dp"
+            android:onClick="toSettings"
             android:src="@drawable/ic_account">
-
         </ImageView>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
+            android:src="@drawable/ic_settings"
             android:padding="15dp"
-            android:src="@drawable/ic_settings_black">
-
+            android:onClick="getProfile"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
         </ImageView>
 
         <TextView
@@ -38,24 +39,22 @@
             android:layout_centerInParent="true"
             android:padding="10dp"
             android:text="Lumbi"
-            android:textColor="@color/black"
+            android:textColor="@color/cream"
             android:textSize="36sp"
             android:textStyle="bold">
-
         </TextView>
-
     </RelativeLayout>
 
 
 
 
     <LinearLayout
+        android:id="@+id/cards"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:layout_weight="6"
-
         android:background="@color/material_on_background_disabled"
         android:orientation="vertical">
 
@@ -69,12 +68,13 @@
             android:rowCount="3">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/letters"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
-
+                android:onClick="toLetters"
                 android:backgroundTint="@color/white"
                 app:cardCornerRadius="10dp">
 
@@ -82,26 +82,25 @@
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-
+                    android:background="@drawable/letters"
+                    android:onClick="toLetters"
                     android:orientation="vertical"
                     android:weightSum="10">
-
 
                 </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
-
             <androidx.cardview.widget.CardView
+                android:id="@+id/numbers"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
-
+                android:onClick="toNumbers"
                 android:backgroundTint="#fece2f"
                 app:cardCornerRadius="10dp">
                 <!--needs numbers background-->
@@ -111,22 +110,20 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
+                    android:onClick="toNumbers"
+                    android:background="@drawable/numbers"
                     android:orientation="vertical"
                     android:weightSum="10">
-
-
                 </LinearLayout>
 
-
             </androidx.cardview.widget.CardView>
-
             <androidx.cardview.widget.CardView
+                android:id="@+id/hygiene"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="16dp"
-                android:background="@color/cream"
                 android:backgroundTint="@color/white"
                 app:cardCornerRadius="10dp">
 
@@ -136,15 +133,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-
                     android:gravity="center"
+                    android:onClick="toHygiene"
+                    android:background="@drawable/hygiene"
                     android:orientation="vertical"
                     android:weightSum="10">
-
                 </LinearLayout>
-
-
             </androidx.cardview.widget.CardView>
+
+
+
+
+
 
 
         </GridLayout>

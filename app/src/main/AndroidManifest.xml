@@ -13,13 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lumbi"
         tools:ignore="AllowBackup">
+        <activity android:name=".HygieneActivity"></activity>
         <activity
-            android:name=".numbers"
+            android:name=".Numbers"
             android:exported="true" />
         <activity
             android:name=".Alphabets"
             android:exported="true" />
-        <activity android:name=".GetStartedActivity"></activity>
+        <activity android:name=".GetStartedActivity" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".ChildMenu" />
         <activity android:name=".LoginActivity" />

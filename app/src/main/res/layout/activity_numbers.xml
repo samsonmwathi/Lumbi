@@ -139,6 +139,10 @@
             android:layout_column="1"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ten"/>
 
         </androidx.cardview.widget.CardView>
 

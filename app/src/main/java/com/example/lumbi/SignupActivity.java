@@ -35,6 +35,7 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        //hooks
         firstName=findViewById(R.id.firstName);
         surName=findViewById(R.id.surName);
         emailAddress=findViewById(R.id.emailAddress);
@@ -43,10 +44,11 @@ public class SignupActivity extends AppCompatActivity {
         confirmPassword=findViewById(R.id.confirmPassword);
         signUpButton=findViewById(R.id.signUpButton);
         loginButton=findViewById(R.id.loginButton);
+
         progressDialog = new ProgressDialog(this);
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
-
+        //onClicks
         signUpButton.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -62,7 +64,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
     }
-
+    //to verify input
     private void PerformAuth() {
         String fName=firstName.getText().toString();
         String sName=surName.getText().toString();
@@ -89,6 +91,7 @@ public class SignupActivity extends AppCompatActivity {
             confirmPassword.setError("enter matching password");
         }
         else{
+            //to Signup
             progressDialog.setTitle("Registration");
             progressDialog.setMessage("Please wait while Registering...");
             progressDialog.setCanceledOnTouchOutside(false);
